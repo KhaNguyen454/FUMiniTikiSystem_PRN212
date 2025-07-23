@@ -1,0 +1,39 @@
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Build Results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+
+# Rider/JetBrains IDE
+.idea/
+
+# User-specific files
+*.userprefs
+
+# Database
+*.mdf
+*.ldf
+
+# Auto-generated files
+*.dbmdl
+*.bak
+
+# App settings - sensitive info
+appsettings.Development.json
+
+# Entity Framework Migrations (optional)
+# Migrations/
+
+# Windows crash dumps
+*.dmp
+
+# Others
+Thumbs.db
+ehthumbs.db
+desktop.ini
