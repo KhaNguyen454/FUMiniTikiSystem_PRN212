@@ -18,7 +18,8 @@ A basic e-commerce WPF application developed using 3-Layer Architecture and Enti
 - Visual Studio 2022+
 
 ## 📁 Folder Structure
-BusinessLocgioLayer/ -> Entities like Product, Category
-DataAccessLayer/ -> DbContext + Repositories
-WPF/ -> WPF Views & ViewModels
-docs/ -> Assignment document, ERD
+
+- BusinessLocgioLayer/ -> Entities like Product, Category
+- DataAccessLayer/ -> DbContext + Repositories
+- WPF/ -> WPF Views & ViewModels
+- docs/ -> Assignment document, ERD
