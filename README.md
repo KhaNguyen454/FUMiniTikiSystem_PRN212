@@ -18,35 +18,7 @@ A basic e-commerce WPF application developed using 3-Layer Architecture and Enti
 - Visual Studio 2022+
 
 ## 📁 Folder Structure
-
-📦 FUMiniTikiSystem_PRN212/
-├── 📁 docs/                         # Tài liệu: mô hình, hướng dẫn, sơ đồ, báo cáo
-│   ├── ERD.png                     # Sơ đồ ERD (nếu có)
-│   └── AssignmentGuide.md          # Tóm tắt yêu cầu đề bài
-│
-├── 📁 FUMiniTikiSystem/            # Thư mục solution .sln (Visual Studio)
-│   ├── StudentName_ClassCode_GASM.sln
-│
-│   ├── 📁 BusinessLogicLayer/         # ✅ LAYER 1 - Entities (Product, Order, Category...)
-│   │   └── Models/
-│   │       ├── Product.cs
-│   │       └── ...
-│
-│   ├── 📁 DataAccessLayer/              # ✅ LAYER 2 - Database + Repositories
-│   │   ├── FUMiniTikiSystemContext.cs
-│   │   ├── Repositories/
-│   │   │   ├── IProductRepository.cs
-│   │   │   └── ProductRepository.cs
-│   │   │   └── ...
-│   │   └── Migrations/            # Chứa các migration EF Core
-│
-│   ├── 📁 StudentNameWPF/          # ✅ LAYER 3 - Giao diện người dùng WPF
-│   │   ├── Views/
-│   │   ├── ViewModels/
-│   │   └── App.xaml.cs, MainWindow.xaml.cs ...
-│
-│   └── appsettings.json           # Kết nối DB
-│
-├── .gitignore
-├── README.md
-└── LICENSE (MIT)
+BusinessLocgioLayer/ -> Entities like Product, Category
+DataAccessLayer/ -> DbContext + Repositories
+WPF/ -> WPF Views & ViewModels
+docs/ -> Assignment document, ERD
