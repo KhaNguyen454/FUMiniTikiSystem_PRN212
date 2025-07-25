@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer
@@ -45,6 +46,10 @@ namespace DataAccessLayer
                 _dbSet.Remove(entity);
                 await _context.SaveChangesAsync();
             }
+        }
+        public virtual Task<IQueryable<TEntity>> FindByConditionAsync(Expression<Func<TEntity, bool>> expression)
+        {
+            return Task.FromResult(_dbSet.Where(expression).AsNoTracking());
         }
     }
 }

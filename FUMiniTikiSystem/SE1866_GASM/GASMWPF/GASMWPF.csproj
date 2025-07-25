@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj" />
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
