@@ -3,14 +3,76 @@
   "WorkspaceRootPath": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\",
   "Documents": [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\mainapplicationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\mainapplicationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\fuminitikisystemdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fuminitikisystemdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\fuminitikisystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fuminitikisystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\dao\\icustomerdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\icustomerdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\dao\\customerdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\customerdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\businesslogiclayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\businesslogiclayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LAPTOP KHA\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -18,22 +80,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\gasmwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\gasmwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\business\\customerbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\business\\customerbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\business\\icustomerbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\business\\icustomerbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\dao\\icustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\icustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\dao\\customerdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dao\\customerdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -44,97 +90,14 @@
       "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-=======
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\fuminitikisystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fuminitikisystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\fuminitikisystemdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fuminitikisystemdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\gasmwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\gasmwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-      "AbsoluteMoniker": "D:0:0:{79648AAB-C6BE-491B-9EEF-848EA191F8B5}|BusinessObjects\\BusinessObjects.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businessobjects\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79648AAB-C6BE-491B-9EEF-848EA191F8B5}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\mainapplicationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\mainapplicationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\mainapplicationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\mainapplicationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
       "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -143,32 +106,12 @@
       "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79648AAB-C6BE-491B-9EEF-848EA191F8B5}|BusinessObjects\\BusinessObjects.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businessobjects\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79648AAB-C6BE-491B-9EEF-848EA191F8B5}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\migrations\\20250725170119_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\20250725170119_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\dataaccesslayer.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\businesslogiclayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\businesslogiclayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79648AAB-C6BE-491B-9EEF-848EA191F8B5}|BusinessObjects\\BusinessObjects.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businessobjects\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79648AAB-C6BE-491B-9EEF-848EA191F8B5}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79648AAB-C6BE-491B-9EEF-848EA191F8B5}|BusinessObjects\\BusinessObjects.csproj|d:\\code\\code_fpt\\5\\prn212\\assignment\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businessobjects\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79648AAB-C6BE-491B-9EEF-848EA191F8B5}|BusinessObjects\\BusinessObjects.csproj|solutionrelative:businessobjects\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,306 +121,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "SelectedChildIndex": 6,
-=======
-          "SelectedChildIndex": 5,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-          "SelectedChildIndex": 5,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
+          "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "Title": "ICustomerBusiness.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Business\\ICustomerBusiness.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Business\\ICustomerBusiness.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Business\\ICustomerBusiness.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Business\\ICustomerBusiness.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T11:43:11.794Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ICustomer.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DAO\\ICustomer.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\ICustomer.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DAO\\ICustomer.cs",
-              "RelativeToolTip": "DataAccessLayer\\DAO\\ICustomer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T11:42:31.679Z",
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAuwGoAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T17:29:13.836Z",
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "Title": "CustomerDAO.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DAO\\CustomerDAO.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\CustomerDAO.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DAO\\CustomerDAO.cs",
-              "RelativeToolTip": "DataAccessLayer\\DAO\\CustomerDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T11:42:16.159Z",
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\GenericRepository.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\GenericRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\GenericRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAswDQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:51:08.523Z",
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 10,
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
-              "RelativeDocumentMoniker": "GASMWPF\\appsettings.json",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
-              "RelativeToolTip": "GASMWPF\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-25T16:39:08.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FUMiniTikiSystemDBContext.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:51:11.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\appsettings.json",
-              "RelativeDocumentMoniker": "DataAccessLayer\\appsettings.json",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\appsettings.json",
-              "RelativeToolTip": "DataAccessLayer\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "WhenOpened": "2025-07-25T17:11:36.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "WhenOpened": "2025-07-25T17:11:36.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "RegisterWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\RegisterWindow.xaml",
-              "RelativeDocumentMoniker": "GASMWPF\\RegisterWindow.xaml",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\RegisterWindow.xaml",
-              "RelativeToolTip": "GASMWPF\\RegisterWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-25T17:45:38.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 3,
-              "Title": "GASMWPF.csproj",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\GASMWPF.csproj",
-              "RelativeDocumentMoniker": "GASMWPF\\GASMWPF.csproj",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\GASMWPF.csproj",
-              "RelativeToolTip": "GASMWPF\\GASMWPF.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-25T18:01:04.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "GASMWPF\\LoginWindow.xaml",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml",
-              "RelativeToolTip": "GASMWPF\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-25T17:28:24.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T17:29:13.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResourcePart.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP KHA\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
-              "ToolTip": "C:\\Users\\LAPTOP KHA\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs [Read Only]",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAEAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T11:49:46.394Z",
-              "EditorCaption": " [Read Only]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CustomerBusiness.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Business\\CustomerBusiness.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Business\\CustomerBusiness.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Business\\CustomerBusiness.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Business\\CustomerBusiness.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T11:43:22.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FUMiniTikiSystemDBContext.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:51:11.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
-              "RelativeDocumentMoniker": "GASMWPF\\appsettings.json",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
-              "RelativeToolTip": "GASMWPF\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-25T16:39:08.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\GenericRepository.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\GenericRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\GenericRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAswDQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:51:08.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-=======
-              "DocumentIndex": 4,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-              "DocumentIndex": 4,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
               "Title": "FUMiniTikiSystemDBContextFactory.cs",
               "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContextFactory.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\FUMiniTikiSystemDBContextFactory.cs",
               "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContextFactory.cs",
               "RelativeToolTip": "DataAccessLayer\\FUMiniTikiSystemDBContextFactory.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwCoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "WhenOpened": "2025-07-25T16:44:25.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
               "WhenOpened": "2025-07-25T16:44:25.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\GenericRepository.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\GenericRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T16:51:08.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Services\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\ICustomerService.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Services\\ICustomerService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T12:29:59.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\CustomerService.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Services\\CustomerService.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T12:31:26.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\IRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\IRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T16:51:07.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GASMWPF\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "GASMWPF\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T17:29:13.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainApplicationWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GASMWPF\\MainApplicationWindow.xaml.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml.cs",
+              "RelativeToolTip": "GASMWPF\\MainApplicationWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T17:36:44.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RegisterWindow.xaml.cs",
               "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\RegisterWindow.xaml.cs",
               "RelativeDocumentMoniker": "GASMWPF\\RegisterWindow.xaml.cs",
               "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\RegisterWindow.xaml.cs",
               "RelativeToolTip": "GASMWPF\\RegisterWindow.xaml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAqwKMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAmwAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T17:47:00.78Z",
               "EditorCaption": ""
@@ -485,290 +238,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "Title": "DataAccessLayer.csproj",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-25T16:47:25.76Z",
+              "Title": "FUMiniTikiSystemDBContext.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T16:51:11.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\IRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\IRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:51:07.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MainApplicationWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\MainApplicationWindow.xaml.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\MainApplicationWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T17:36:44.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 21,
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
               "DocumentIndex": 9,
-              "Title": "GASMWPF",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\GASMWPF.csproj",
-              "RelativeDocumentMoniker": "GASMWPF\\GASMWPF.csproj",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\GASMWPF.csproj",
-              "RelativeToolTip": "GASMWPF\\GASMWPF.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-25T18:01:04.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainApplicationWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\MainApplicationWindow.xaml.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\MainApplicationWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Title": "ICustomerDAO.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DAO\\ICustomerDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\ICustomerDAO.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DAO\\ICustomerDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\ICustomerDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T17:36:44.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\App.xaml",
-              "RelativeDocumentMoniker": "GASMWPF\\App.xaml",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\App.xaml",
-              "RelativeToolTip": "GASMWPF\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-25T17:29:28.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 20,
-=======
-              "DocumentIndex": 14,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-              "DocumentIndex": 14,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\App.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\App.xaml.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\App.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "WhenOpened": "2025-07-25T17:29:46.23Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "WhenOpened": "2025-07-25T17:29:46.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "GASMWPF\\LoginWindow.xaml",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml",
-              "RelativeToolTip": "GASMWPF\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-25T17:28:24.011Z",
+              "WhenOpened": "2025-07-27T11:42:31.679Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessObjects\\Customer.cs",
-              "RelativeDocumentMoniker": "BusinessObjects\\Customer.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessObjects\\Customer.cs",
-              "RelativeToolTip": "BusinessObjects\\Customer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBMAAAABAAAAAAAAAA==",
+              "Title": "CustomerDAO.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DAO\\CustomerDAO.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DAO\\CustomerDAO.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DAO\\CustomerDAO.cs",
+              "RelativeToolTip": "DataAccessLayer\\DAO\\CustomerDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "WhenOpened": "2025-07-25T16:17:35.927Z"
+              "WhenOpened": "2025-07-27T11:42:16.159Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "WhenOpened": "2025-07-25T16:17:35.927Z",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Customer.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Customer.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADgvxEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T12:40:53.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "MainApplicationWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml",
-              "RelativeDocumentMoniker": "GASMWPF\\MainApplicationWindow.xaml",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml",
-              "RelativeToolTip": "GASMWPF\\MainApplicationWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-25T17:36:07.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 22,
-=======
-              "DocumentIndex": 16,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-              "DocumentIndex": 16,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
               "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessObjects\\Product.cs",
-              "RelativeDocumentMoniker": "BusinessObjects\\Product.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessObjects\\Product.cs",
-              "RelativeToolTip": "BusinessObjects\\Product.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowB0AAAABAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Product.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Product.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Product.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "WhenOpened": "2025-07-25T16:17:06.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-=======
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "WhenOpened": "2025-07-25T16:17:06.305Z",
+              "WhenOpened": "2025-07-27T12:41:00.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DataAccessLayer.csproj",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-25T16:47:25.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-<<<<<<< HEAD
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "20250725170119_InitialCreate.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Migrations\\20250725170119_InitialCreate.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20250725170119_InitialCreate.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Migrations\\20250725170119_InitialCreate.cs",
-              "RelativeToolTip": "DataAccessLayer\\Migrations\\20250725170119_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Order.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Order.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T17:01:19.667Z"
+              "WhenOpened": "2025-07-27T12:40:57.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 24,
-=======
-              "DocumentIndex": 18,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-              "DocumentIndex": 18,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Class1.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Class1.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Class1.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Category.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Category.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:51:02.815Z"
+              "WhenOpened": "2025-07-27T12:39:47.363Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 25,
-=======
-              "DocumentIndex": 19,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-              "DocumentIndex": 19,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "DataAccessLayer",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-25T16:47:27.462Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 26,
-=======
-              "DocumentIndex": 21,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-              "DocumentIndex": 21,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
+              "DocumentIndex": 16,
               "Title": "BusinessLogicLayer.csproj",
               "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\BusinessLogicLayer.csproj",
@@ -780,43 +340,141 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 27,
-=======
-              "DocumentIndex": 22,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-              "DocumentIndex": 22,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessObjects\\Order.cs",
-              "RelativeDocumentMoniker": "BusinessObjects\\Order.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessObjects\\Order.cs",
-              "RelativeToolTip": "BusinessObjects\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:17:59.844Z"
+              "DocumentIndex": 17,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "GASMWPF\\LoginWindow.xaml",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml",
+              "RelativeToolTip": "GASMWPF\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T17:28:24.011Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "DocumentIndex": 28,
-=======
-              "DocumentIndex": 23,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-=======
-              "DocumentIndex": 23,
->>>>>>> 9399787a08f9e35a54681ff5520cf4fc1f60807b
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessObjects\\Category.cs",
-              "RelativeDocumentMoniker": "BusinessObjects\\Category.cs",
-              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessObjects\\Category.cs",
-              "RelativeToolTip": "BusinessObjects\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "GASMWPF.csproj",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\GASMWPF.csproj",
+              "RelativeDocumentMoniker": "GASMWPF\\GASMWPF.csproj",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\GASMWPF.csproj",
+              "RelativeToolTip": "GASMWPF\\GASMWPF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-25T18:01:04.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\appsettings.json",
+              "RelativeDocumentMoniker": "DataAccessLayer\\appsettings.json",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\appsettings.json",
+              "RelativeToolTip": "DataAccessLayer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-25T17:11:36.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ResourcePart.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP KHA\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
+              "ToolTip": "C:\\Users\\LAPTOP KHA\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs [Read Only]",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAAEAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T16:16:44.466Z"
+              "WhenOpened": "2025-07-27T11:49:46.394Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegisterWindow.xaml",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\RegisterWindow.xaml",
+              "RelativeDocumentMoniker": "GASMWPF\\RegisterWindow.xaml",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\RegisterWindow.xaml",
+              "RelativeToolTip": "GASMWPF\\RegisterWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T17:45:38.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
+              "RelativeDocumentMoniker": "GASMWPF\\appsettings.json",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
+              "RelativeToolTip": "GASMWPF\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-25T16:39:08.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DataAccessLayer.csproj",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-25T16:47:25.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\App.xaml",
+              "RelativeDocumentMoniker": "GASMWPF\\App.xaml",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\App.xaml",
+              "RelativeToolTip": "GASMWPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T17:29:28.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\App.xaml.cs",
+              "RelativeDocumentMoniker": "GASMWPF\\App.xaml.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\App.xaml.cs",
+              "RelativeToolTip": "GASMWPF\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T17:29:46.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MainApplicationWindow.xaml",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml",
+              "RelativeDocumentMoniker": "GASMWPF\\MainApplicationWindow.xaml",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\MainApplicationWindow.xaml",
+              "RelativeToolTip": "GASMWPF\\MainApplicationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T17:36:07.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20250725170119_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Migrations\\20250725170119_InitialCreate.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20250725170119_InitialCreate.cs",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Migrations\\20250725170119_InitialCreate.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20250725170119_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T17:01:19.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DataAccessLayer",
+              "DocumentMoniker": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "D:\\Code\\CODE_FPT\\5\\PRN212\\Assignment\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-25T16:47:27.462Z"
             }
           ]
         }

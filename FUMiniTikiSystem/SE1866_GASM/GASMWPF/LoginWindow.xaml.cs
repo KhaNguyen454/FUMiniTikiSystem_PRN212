@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Input;
-using BusinessObjects;
+using DataAccessLayer.Entities;
 using DataAccessLayer; // Dùng DataAccessLayer để truy cập IRepository và GenericRepository
 using Microsoft.EntityFrameworkCore; // Cần cho .FirstOrDefaultAsync() và DbContextOptionsBuilder
 using Microsoft.Extensions.Configuration; // Cần để đọc appsettings.json

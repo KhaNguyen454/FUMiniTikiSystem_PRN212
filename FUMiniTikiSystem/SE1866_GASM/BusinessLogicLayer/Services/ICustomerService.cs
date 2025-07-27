@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogicLayer.Business
+namespace BusinessLogicLayer.Services
 {
-    internal class CustomerBusiness
+    internal class ICustomerService
     {
     }
 }
