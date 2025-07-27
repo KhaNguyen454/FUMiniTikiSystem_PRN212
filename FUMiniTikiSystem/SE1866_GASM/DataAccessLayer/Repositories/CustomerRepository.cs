@@ -8,6 +8,6 @@ namespace DataAccessLayer.DAO
 {
     internal interface CustomerDAO
     {
-        private readonly String a;
+      
     }
 }
