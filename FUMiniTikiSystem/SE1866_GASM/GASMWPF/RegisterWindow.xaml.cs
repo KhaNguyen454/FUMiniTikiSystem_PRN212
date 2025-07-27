@@ -2,20 +2,15 @@
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
-using DataAccessLayer.Entities;
-using DataAccessLayer; // Dùng DataAccessLayer để truy cập IRepository và GenericRepository
-using Microsoft.EntityFrameworkCore; // Cần cho .AnyAsync() và DbContextOptionsBuilder
-using Microsoft.Extensions.Configuration; // Cần để đọc appsettings.json
-using System.IO; // Cần để lấy đường dẫn hiện tại
-using System.Linq; // Cần cho .AnyAsync()
-using System.Threading.Tasks; // Cần cho async/await
+using DataAccessLayer.Entities; // Sử dụng Entities từ DataAccessLayer
+using BusinessLogicLayer.Services; // Sử dụng Services từ BusinessLogicLayer
+using System.Threading.Tasks;
 
-namespace GASMWPF
+namespace GASMWPF // Vẫn ở namespace gốc
 {
     public partial class RegisterWindow : Window
     {
-        // Khai báo một instance của Customer Repository
-        private readonly IRepository<Customer> _customerRepository; // Đảm bảo khai báo ở đây
+        private readonly ICustomerService _customerService; // Khai báo Service Layer
 
         public RegisterWindow()
         {
@@ -26,31 +21,9 @@ namespace GASMWPF
                     this.DragMove();
                 }
             };
-
-            // ---- KHỞI TẠO REPOSITORY VÀ DB CONTEXT ĐÚNG CÁCH ----
-            // 1. Đọc Connection String từ appsettings.json
-            var configuration = new ConfigurationBuilder()
-                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory) // Đảm bảo đọc từ thư mục chạy ứng dụng WPF
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .Build();
-            string connectionString = configuration.GetConnectionString("FUMiniTikiDB"); // Tên ConnectionString của bạn
-
-            if (string.IsNullOrEmpty(connectionString))
-            {
-                // Fallback nếu không tìm thấy (chỉ cho dev/test)
-                connectionString = "Server=(local);Database=FUMiniTikiSystem;Uid=sa;Pwd=12345;TrustServerCertificate=True";
-                MessageBox.Show("Cảnh báo: Không tìm thấy ConnectionString 'FUMiniTikiDB' trong appsettings.json. Đang sử dụng chuỗi mặc định.", "Cấu hình", MessageBoxButton.OK, MessageBoxImage.Warning);
-            }
-
-            // 2. Tạo DbContextOptions
-            var optionsBuilder = new DbContextOptionsBuilder<FUMiniTikiSystemDBContext>();
-            optionsBuilder.UseSqlServer(connectionString);
-
-            // 3. Khởi tạo Repository với DbContext đã cấu hình Options
-            _customerRepository = new GenericRepository<Customer>(new FUMiniTikiSystemDBContext(optionsBuilder.Options));
+            _customerService = new CustomerService(); // Khởi tạo Service Layer
         }
 
-        // Đảm bảo phương thức là async void
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             string name = txtName.Text;
@@ -58,7 +31,7 @@ namespace GASMWPF
             string password = txtPassword.Password;
             string confirmPassword = txtConfirmPassword.Password;
 
-            // 1. Validation dữ liệu
+            // 1. Validation dữ liệu (một số được xử lý ở đây, một số ở Service Layer)
             if (string.IsNullOrWhiteSpace(name))
             {
                 MessageBox.Show("Vui lòng nhập Tên của bạn.", "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -71,33 +44,12 @@ namespace GASMWPF
                 txtEmail.Focus();
                 return;
             }
-            if (!IsValidEmail(email))
+            if (!IsValidEmail(email)) // Validation định dạng email ở UI
             {
                 MessageBox.Show("Email không hợp lệ.", "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Warning);
                 txtEmail.Focus();
                 return;
             }
-
-            // THÊM: Kiểm tra email đã tồn tại chưa trong database SỬ DỤNG REPOSITORY VÀ ASYNC
-            try
-            {
-                // Sử dụng FindByConditionAsync và sau đó .AnyAsync() để kiểm tra sự tồn tại
-                // .Result ở đây là cần thiết để lấy IQueryable<TEntity> từ Task<IQueryable<TEntity>>
-                // trước khi gọi .AnyAsync()
-                bool emailExists = await _customerRepository.FindByConditionAsync(c => c.Email == email).Result.AnyAsync();
-                if (emailExists)
-                {
-                    MessageBox.Show("Email này đã được đăng ký. Vui lòng sử dụng Email khác.", "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    txtEmail.Focus();
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi kiểm tra Email: {ex.Message}\nChi tiết: {ex.InnerException?.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
             if (string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Vui lòng nhập Mật khẩu.", "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -124,23 +76,33 @@ namespace GASMWPF
                 {
                     Name = name,
                     Email = email,
-                    Password = password, // LƯU Ý QUAN TRỌNG: TRONG THỰC TẾ, BẠN PHẢI HASH MẬT KHẨU Ở ĐÂY TRƯỚC KHI LƯU VÀO DB.
+                    Password = password, // LƯU Ý: Trong thực tế, bạn PHẢI hash mật khẩu ở đây hoặc trong Service Layer
                 };
 
-                // 3. GỌI REPOSITORY ĐỂ THÊM VÀO DATABASE BẰNG ADDASYNC VÀ AWAIT
-                await _customerRepository.AddAsync(newCustomer);
+                // 3. GỌI SERVICE LAYER ĐỂ ĐĂNG KÝ
+                bool success = await _customerService.RegisterAsync(newCustomer);
 
-                MessageBox.Show("Đăng ký tài khoản thành công! Vui lòng đăng nhập.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                // Quay lại màn hình đăng nhập
-                LoginWindow loginWindow = new LoginWindow();
-                loginWindow.Show();
-                this.Close();
+                if (success)
+                {
+                    MessageBox.Show("Đăng ký tài khoản thành công! Vui lòng đăng nhập.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    // Quay lại màn hình đăng nhập
+                    LoginWindow loginWindow = new LoginWindow(); // Vẫn tham chiếu đến LoginWindow ở gốc
+                    loginWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    // Trường hợp RegisterAsync trả về false nhưng không ném ngoại lệ
+                    MessageBox.Show("Đăng ký thất bại. Vui lòng thử lại.", "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (ArgumentException argEx) // Bắt các lỗi validation từ Service Layer
+            {
+                MessageBox.Show(argEx.Message, "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Đã xảy ra lỗi khi đăng ký: {ex.Message}\nChi tiết: {ex.InnerException?.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
-                // Ghi log lỗi chi tiết hơn trong môi trường thực tế để debug dễ hơn
+                MessageBox.Show($"Đã xảy ra lỗi khi đăng ký: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
