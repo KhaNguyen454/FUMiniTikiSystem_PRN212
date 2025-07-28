@@ -1,15 +1,15 @@
-﻿using DataAccessLayer.Entities; // Sử dụng Entities từ DataAccessLayer
+﻿using DataAccessLayer.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Linq;
+using System.Linq; // Quan trọng: Đảm bảo có using System.Linq
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Repositories // Đã đổi namespace
+namespace DataAccessLayer.Repositories
 {
-    public class CustomerRepository : ICustomerRepository // Đã đổi tên lớp và interface triển khai
+    public class CustomerRepository : ICustomerRepository
     {
         private readonly FUMiniTikiSystemDBContext _context;
-        private readonly GenericRepository<Customer> _customerGenericRepository; // Đổi tên biến để tránh nhầm lẫn
+        private readonly GenericRepository<Customer> _customerGenericRepository;
 
         public CustomerRepository(FUMiniTikiSystemDBContext context)
         {
@@ -17,9 +17,10 @@ namespace DataAccessLayer.Repositories // Đã đổi namespace
             _customerGenericRepository = new GenericRepository<Customer>(_context);
         }
 
-        public async Task<IQueryable<Customer>> GetAllCustomersAsync()
+        // ĐẢM BẢO TRIỂN KHAI NÀY: Gọi GetAll() không có Async từ GenericRepository
+        public IQueryable<Customer> GetAllCustomers()
         {
-            return (await _customerGenericRepository.GetAllAsync()).AsQueryable();
+            return _customerGenericRepository.GetAll();
         }
 
         public async Task<Customer?> GetCustomerByIdAsync(int id)
@@ -44,13 +45,14 @@ namespace DataAccessLayer.Repositories // Đã đổi namespace
 
         public async Task<bool> IsEmailExistsAsync(string email)
         {
-            return await _customerGenericRepository.FindByConditionAsync(c => c.Email == email).Result.AnyAsync();
+            // Các phương thức bất đồng bộ (AnyAsync, FirstOrDefaultAsync) được gọi trên IQueryable
+            return await GetAllCustomers().AnyAsync(c => c.Email == email);
         }
 
         public async Task<Customer?> GetCustomerByEmailAndPasswordAsync(string email, string password)
         {
-            return await _customerGenericRepository.FindByConditionAsync(c => c.Email == email && c.Password == password)
-                                       .Result.FirstOrDefaultAsync();
+            // Các phương thức bất đồng bộ (AnyAsync, FirstOrDefaultAsync) được gọi trên IQueryable
+            return await GetAllCustomers().FirstOrDefaultAsync(c => c.Email == email && c.Password == password);
         }
     }
 }

@@ -4,15 +4,16 @@ using System.Windows.Input;
 using DataAccessLayer.Entities; 
 using BusinessLogicLayer.Services; 
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
-namespace GASMWPF.CustomerWindow
+namespace GASMWPF.CustomerWindow 
 {
     public partial class CustomerProfileWindow : Window
     {
         private readonly ICustomerService _customerService;
         private DataAccessLayer.Entities.Customer _currentCustomer; 
 
-        public CustomerProfileWindow(DataAccessLayer.Entities.Customer customer)
+        public CustomerProfileWindow(DataAccessLayer.Entities.Customer customer) 
         {
             InitializeComponent();
             this.MouseLeftButtonDown += (sender, e) => {
@@ -61,10 +62,15 @@ namespace GASMWPF.CustomerWindow
                 txtEmail.Focus();
                 return;
             }
-            // Bạn có thể thêm validation định dạng email ở đây
+            if (!IsValidEmail(newEmail)) 
+            {
+                MessageBox.Show("Email không hợp lệ.", "Lỗi Cập Nhật", MessageBoxButton.OK, MessageBoxImage.Warning);
+                txtEmail.Focus();
+                return;
+            }
 
             // Tạo một đối tượng Customer tạm thời để cập nhật
-            DataAccessLayer.Entities.Customer updatedCustomer = new DataAccessLayer.Entities.Customer
+            DataAccessLayer.Entities.Customer updatedCustomer = new DataAccessLayer.Entities.Customer 
             {
                 CustomerId = _currentCustomer.CustomerId,
                 Name = newName,
@@ -95,6 +101,11 @@ namespace GASMWPF.CustomerWindow
             {
                 MessageBox.Show($"Đã xảy ra lỗi khi cập nhật hồ sơ: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            return Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)

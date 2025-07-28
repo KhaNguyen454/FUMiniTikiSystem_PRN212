@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+using System;
+using System.Linq; // Quan trọng: Đảm bảo có using System.Linq
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using DataAccessLayer.Entities;
@@ -17,9 +18,10 @@ namespace DataAccessLayer
             _dbSet = _context.Set<TEntity>();
         }
 
-        public virtual async Task<IEnumerable<TEntity>> GetAllAsync()
+        // ĐẢM BẢO TRIỂN KHAI NÀY: Trả về IQueryable<TEntity> trực tiếp
+        public virtual IQueryable<TEntity> GetAll()
         {
-            return await _dbSet.ToListAsync();
+            return _dbSet.AsNoTracking(); // Trả về IQueryable<TEntity>
         }
 
         public virtual async Task<TEntity?> GetByIdAsync(int id)
@@ -48,6 +50,7 @@ namespace DataAccessLayer
                 await _context.SaveChangesAsync();
             }
         }
+
         public virtual Task<IQueryable<TEntity>> FindByConditionAsync(Expression<Func<TEntity, bool>> expression)
         {
             return Task.FromResult(_dbSet.Where(expression).AsNoTracking());
