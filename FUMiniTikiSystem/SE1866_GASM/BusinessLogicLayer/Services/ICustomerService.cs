@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.DAO
+namespace BusinessLogicLayer.Services
 {
-    internal interface CustomerDAO
+    internal class ICustomerService
     {
-        private readonly String a;
     }
 }

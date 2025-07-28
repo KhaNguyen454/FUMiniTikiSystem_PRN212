@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogicLayer.Business
+namespace DataAccessLayer.DAO
 {
-    internal class CustomerBusiness
+    internal interface CustomerDAO
     {
+      
     }
 }
