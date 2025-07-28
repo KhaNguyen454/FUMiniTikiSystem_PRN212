@@ -12,5 +12,9 @@ namespace BusinessLogicLayer.Services
         Task<Customer?> GetCustomerByEmailAsync(string email);
         Task<bool> UpdateCustomerProfileAsync(Customer customer);
         Task<bool> IsEmailExistsInDbAsync(string email);
+
+        Task<IEnumerable<Customer>> GetAllCustomersAsync(); // Lấy tất cả khách hàng (Async)
+        Task<Customer?> GetCustomerByIdAsync(int id); // Lấy khách hàng theo ID (Async)
+        Task<bool> DeleteCustomerByIdAsync(int customerId); // Xóa khách hàng theo ID (Async)
     }
 }

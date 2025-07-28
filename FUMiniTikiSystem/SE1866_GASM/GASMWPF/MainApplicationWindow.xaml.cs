@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using DataAccessLayer.Entities; // Sử dụng Entities từ DataAccessLayer
+using GASMWPF.Admin;
 using GASMWPF.CustomerWindow; // Thêm dòng này để tham chiếu đến CustomerProfileWindow
 
 namespace GASMWPF // Vẫn ở namespace gốc
@@ -40,6 +41,19 @@ namespace GASMWPF // Vẫn ở namespace gốc
             else
             {
                 MessageBox.Show("Không tìm thấy thông tin người dùng.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void OpenCustomerManagement_Click(object sender, RoutedEventArgs e)
+        {
+            if (_loggedInCustomer != null && _loggedInCustomer.CustomerId == -1)
+            {
+                CustomerManagementWindow customerManagementWindow = new CustomerManagementWindow();
+                customerManagementWindow.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập tính năng này.", "Truy cập bị từ chối", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
     }

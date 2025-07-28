@@ -7,6 +7,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace BusinessLogicLayer.Services
 {
@@ -100,7 +101,7 @@ namespace BusinessLogicLayer.Services
                 }
 
                 customer.Password = newPassword;
-                await _customerRepository.UpdateCustomerAsync(customer); // ĐÃ SỬA: Gọi UpdateCustomerAsync
+                await _customerRepository.UpdateCustomerAsync(customer);
                 return true;
             }
             catch (Exception ex)
@@ -132,14 +133,38 @@ namespace BusinessLogicLayer.Services
 
             try
             {
-                var existingCustomer = await _customerRepository.GetAllCustomers().FirstOrDefaultAsync(c => c.Email == customer.Email);
-                if (existingCustomer != null && existingCustomer.CustomerId != customer.CustomerId)
+                // 1. Tải khách hàng hiện có từ database để nó được theo dõi bởi DbContext
+                var existingCustomer = await _customerRepository.GetCustomerByIdAsync(customer.CustomerId);
+
+                if (existingCustomer == null)
+                {
+                    throw new ArgumentException("Không tìm thấy khách hàng để cập nhật.");
+                }
+
+                // 2. Kiểm tra xem email mới có bị trùng với email của khách hàng khác không
+                var customerWithSameEmail = await _customerRepository.GetAllCustomers()
+                                                .FirstOrDefaultAsync(c => c.Email == customer.Email && c.CustomerId != customer.CustomerId);
+
+                if (customerWithSameEmail != null)
                 {
                     throw new ArgumentException("Email này đã được sử dụng bởi tài khoản khác.");
                 }
 
-                await _customerRepository.UpdateCustomerAsync(customer); // ĐÃ SỬA: Gọi UpdateCustomerAsync
+                // 3. Cập nhật các thuộc tính của entity đã được theo dõi
+                existingCustomer.Name = customer.Name;
+                existingCustomer.Email = customer.Email;
+                // ĐÃ SỬA: KHÔNG CẬP NHẬT MẬT KHẨU TẠI ĐÂY. Mật khẩu được xử lý bằng ChangePasswordAsync.
+                // existingCustomer.Password = customer.Password; // Dòng này đã được loại bỏ
+
+                // 4. Lưu thay đổi
+                await _customerRepository.UpdateCustomerAsync(existingCustomer); // Truyền entity đã được theo dõi
+
                 return true;
+            }
+            catch (ArgumentException argEx)
+            {
+                Console.WriteLine($"Lỗi Argument khi cập nhật hồ sơ: {argEx.Message}");
+                throw;
             }
             catch (Exception ex)
             {
@@ -163,6 +188,46 @@ namespace BusinessLogicLayer.Services
             {
                 Console.WriteLine($"Lỗi kiểm tra email tồn tại trong DB: {ex.Message}");
                 throw new Exception("Đã xảy ra lỗi khi kiểm tra email. Vui lòng thử lại sau.", ex);
+            }
+        }
+
+        public async Task<IEnumerable<Customer>> GetAllCustomersAsync()
+        {
+            try
+            {
+                return await _customerRepository.GetAllCustomers().ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi lấy tất cả khách hàng: {ex.Message}");
+                throw new Exception("Đã xảy ra lỗi khi tải danh sách khách hàng. Vui lòng thử lại sau.", ex);
+            }
+        }
+
+        public async Task<Customer?> GetCustomerByIdAsync(int id)
+        {
+            try
+            {
+                return await _customerRepository.GetCustomerByIdAsync(id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi lấy khách hàng theo ID: {ex.Message}");
+                throw new Exception($"Đã xảy ra lỗi khi lấy thông tin khách hàng với ID {id}. Vui lòng thử lại sau.", ex);
+            }
+        }
+
+        public async Task<bool> DeleteCustomerByIdAsync(int customerId)
+        {
+            try
+            {
+                await _customerRepository.DeleteCustomerAsync(customerId);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi xóa khách hàng: {ex.Message}");
+                throw new Exception($"Đã xảy ra lỗi khi xóa khách hàng với ID {customerId}. Vui lòng thử lại sau.", ex);
             }
         }
     }

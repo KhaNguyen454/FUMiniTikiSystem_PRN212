@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Linq; // Quan trọng: Đảm bảo có using System.Linq
+using System.Linq; 
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using DataAccessLayer.Entities;

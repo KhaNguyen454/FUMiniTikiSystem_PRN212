@@ -52,6 +52,19 @@
             </Style.Triggers>
         </Style>
 
+
+        <Style x:Key="AdminButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource LogoutButtonStyle}">
+            <Setter Property="Background" Value="#673AB7"/>
+            <Setter Property="Margin" Value="0,20,240,0"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#5E35B1"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#512DA8"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
 
     <Grid>
@@ -72,5 +85,10 @@
                 HorizontalAlignment="Right" VerticalAlignment="Top"
                 Style="{StaticResource ProfileButtonStyle}"
                 Click="OpenProfile_Click"/>
+        
+        <Button Content="Quản lý Khách hàng"
+                HorizontalAlignment="Right" VerticalAlignment="Top"
+                Style="{StaticResource AdminButtonStyle}"
+                Click="OpenCustomerManagement_Click" Margin="0,20,262,0"/>
     </Grid>
 </Window>
