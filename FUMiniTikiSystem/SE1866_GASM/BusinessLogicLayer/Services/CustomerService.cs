@@ -8,6 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.Generic;
+using BusinessLogicLayer.DTOs;
 
 namespace BusinessLogicLayer.Services
 {
@@ -40,16 +41,17 @@ namespace BusinessLogicLayer.Services
             return new FUMiniTikiSystemDBContext(optionsBuilder.Options);
         }
 
-        public async Task<Customer?> LoginAsync(string email, string password)
+        public async Task<CustomerDTO?> LoginAsync(string email, string password)
         {
             if (email == "admin@FUMiniTikiSystem.com" && password == "@@abc123@@")
             {
-                return new Customer { CustomerId = -1, Name = "Admin", Email = email, Password = password };
+                return new CustomerDTO { CustomerId = -1, Name = "Admin", Email = email, Password = password, IsAdmin = true };
             }
 
             try
             {
-                return await _customerRepository.GetCustomerByEmailAndPasswordAsync(email, password);
+                var customer = await _customerRepository.GetCustomerByEmailAndPasswordAsync(email, password);
+                return customer != null ? MapToDTO(customer) : null;
             }
             catch (Exception ex)
             {
@@ -58,24 +60,25 @@ namespace BusinessLogicLayer.Services
             }
         }
 
-        public async Task<bool> RegisterAsync(Customer customer)
+        public async Task<bool> RegisterAsync(CustomerDTO customerDTO)
         {
-            if (string.IsNullOrWhiteSpace(customer.Name) || string.IsNullOrWhiteSpace(customer.Email) || string.IsNullOrWhiteSpace(customer.Password))
+            if (string.IsNullOrWhiteSpace(customerDTO.Name) || string.IsNullOrWhiteSpace(customerDTO.Email) || string.IsNullOrWhiteSpace(customerDTO.Password))
             {
                 throw new ArgumentException("Tên, Email và Mật khẩu không được để trống.");
             }
-            if (customer.Password.Length < 6)
+            if (customerDTO.Password.Length < 6)
             {
                 throw new ArgumentException("Mật khẩu phải có ít nhất 6 ký tự.");
             }
 
             try
             {
-                if (await _customerRepository.IsEmailExistsAsync(customer.Email))
+                if (await _customerRepository.IsEmailExistsAsync(customerDTO.Email))
                 {
                     throw new ArgumentException("Email này đã được đăng ký. Vui lòng sử dụng Email khác.");
                 }
 
+                var customer = MapToEntity(customerDTO);
                 await _customerRepository.AddCustomerAsync(customer);
                 return true;
             }
@@ -111,11 +114,12 @@ namespace BusinessLogicLayer.Services
             }
         }
 
-        public async Task<Customer?> GetCustomerByEmailAsync(string email)
+        public async Task<CustomerDTO?> GetCustomerByEmailAsync(string email)
         {
             try
             {
-                return await _customerRepository.GetAllCustomers().FirstOrDefaultAsync(c => c.Email == email);
+                var customer = await _customerRepository.GetAllCustomers().FirstOrDefaultAsync(c => c.Email == email);
+                return customer != null ? MapToDTO(customer) : null;
             }
             catch (Exception ex)
             {
@@ -124,9 +128,9 @@ namespace BusinessLogicLayer.Services
             }
         }
 
-        public async Task<bool> UpdateCustomerProfileAsync(Customer customer)
+        public async Task<bool> UpdateCustomerProfileAsync(CustomerDTO customerDTO)
         {
-            if (string.IsNullOrWhiteSpace(customer.Name) || string.IsNullOrWhiteSpace(customer.Email))
+            if (string.IsNullOrWhiteSpace(customerDTO.Name) || string.IsNullOrWhiteSpace(customerDTO.Email))
             {
                 throw new ArgumentException("Tên và Email không được để trống.");
             }
@@ -134,7 +138,7 @@ namespace BusinessLogicLayer.Services
             try
             {
                 // 1. Tải khách hàng hiện có từ database để nó được theo dõi bởi DbContext
-                var existingCustomer = await _customerRepository.GetCustomerByIdAsync(customer.CustomerId);
+                var existingCustomer = await _customerRepository.GetCustomerByIdAsync(customerDTO.CustomerId);
 
                 if (existingCustomer == null)
                 {
@@ -143,7 +147,7 @@ namespace BusinessLogicLayer.Services
 
                 // 2. Kiểm tra xem email mới có bị trùng với email của khách hàng khác không
                 var customerWithSameEmail = await _customerRepository.GetAllCustomers()
-                                                .FirstOrDefaultAsync(c => c.Email == customer.Email && c.CustomerId != customer.CustomerId);
+                                                .FirstOrDefaultAsync(c => c.Email == customerDTO.Email && c.CustomerId != customerDTO.CustomerId);
 
                 if (customerWithSameEmail != null)
                 {
@@ -151,13 +155,12 @@ namespace BusinessLogicLayer.Services
                 }
 
                 // 3. Cập nhật các thuộc tính của entity đã được theo dõi
-                existingCustomer.Name = customer.Name;
-                existingCustomer.Email = customer.Email;
-                // ĐÃ SỬA: KHÔNG CẬP NHẬT MẬT KHẨU TẠI ĐÂY. Mật khẩu được xử lý bằng ChangePasswordAsync.
-                // existingCustomer.Password = customer.Password; // Dòng này đã được loại bỏ
+                existingCustomer.Name = customerDTO.Name;
+                existingCustomer.Email = customerDTO.Email;
+                // Không cập nhật mật khẩu tại đây
 
                 // 4. Lưu thay đổi
-                await _customerRepository.UpdateCustomerAsync(existingCustomer); // Truyền entity đã được theo dõi
+                await _customerRepository.UpdateCustomerAsync(existingCustomer);
 
                 return true;
             }
@@ -191,11 +194,12 @@ namespace BusinessLogicLayer.Services
             }
         }
 
-        public async Task<IEnumerable<Customer>> GetAllCustomersAsync()
+        public async Task<IEnumerable<CustomerDTO>> GetAllCustomersAsync()
         {
             try
             {
-                return await _customerRepository.GetAllCustomers().ToListAsync();
+                var customers = await _customerRepository.GetAllCustomers().ToListAsync();
+                return customers.Select(MapToDTO);
             }
             catch (Exception ex)
             {
@@ -204,11 +208,12 @@ namespace BusinessLogicLayer.Services
             }
         }
 
-        public async Task<Customer?> GetCustomerByIdAsync(int id)
+        public async Task<CustomerDTO?> GetCustomerByIdAsync(int id)
         {
             try
             {
-                return await _customerRepository.GetCustomerByIdAsync(id);
+                var customer = await _customerRepository.GetCustomerByIdAsync(id);
+                return customer != null ? MapToDTO(customer) : null;
             }
             catch (Exception ex)
             {
@@ -229,6 +234,31 @@ namespace BusinessLogicLayer.Services
                 Console.WriteLine($"Lỗi khi xóa khách hàng: {ex.Message}");
                 throw new Exception($"Đã xảy ra lỗi khi xóa khách hàng với ID {customerId}. Vui lòng thử lại sau.", ex);
             }
+        }
+
+        // Helper methods for DTO-Entity conversion
+        private CustomerDTO MapToDTO(Customer customer)
+        {
+            return new CustomerDTO
+            {
+                CustomerId = customer.CustomerId,
+                Name = customer.Name,
+                Email = customer.Email,
+                Password = customer.Password,
+                IsAdmin = false // Default value since Customer entity doesn't have IsAdmin property
+            };
+        }
+
+        private Customer MapToEntity(CustomerDTO customerDTO)
+        {
+            return new Customer
+            {
+                CustomerId = customerDTO.CustomerId,
+                Name = customerDTO.Name,
+                Email = customerDTO.Email,
+                Password = customerDTO.Password
+                // IsAdmin is not part of the Customer entity
+            };
         }
     }
 }

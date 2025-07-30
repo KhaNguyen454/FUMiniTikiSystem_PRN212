@@ -5,23 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GASMWPF.Admin"
         mc:Ignorable="d"
-        Title="FU Mini Tiki - Hệ thống Quản lý" Height="700" Width="1200"
-        WindowStartupLocation="CenterScreen">
+        Title="FU Mini Tiki - Hệ thống Quản lý" 
+        Height="700" 
+        Width="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F7FA">
     <Window.Resources>
+        <!-- Base Button Style with Modern Look -->
         <Style x:Key="BaseButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Background" Value="#FF5722"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="16"/>
-            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Padding" Value="15,10"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="0,10"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Border Background="{TemplateBinding Background}"
-                                CornerRadius="5"
-                                Padding="{TemplateBinding Padding}">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                CornerRadius="8"
+                                Padding="{TemplateBinding Padding}"
+                                BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
@@ -29,6 +37,15 @@
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#E64A19"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect ShadowDepth="2" 
+                                            Direction="315" 
+                                            Color="Gray" 
+                                            Opacity="0.3" 
+                                            BlurRadius="5"/>
+                        </Setter.Value>
+                    </Setter>
                 </Trigger>
                 <Trigger Property="IsPressed" Value="True">
                     <Setter Property="Background" Value="#D84315"/>
@@ -36,14 +53,24 @@
             </Style.Triggers>
         </Style>
 
-        <Style x:Key="LogoutButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseButtonStyle}">
-            <Setter Property="Background" Value="#FF5722"/>
-            <Setter Property="Margin" Value="20"/>
+        <!-- Logout Button Style -->
+        <Style x:Key="LogoutButtonStyle" TargetType="{x:Type Button}" 
+               BasedOn="{StaticResource BaseButtonStyle}">
+            <Setter Property="Background" Value="#F44336"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#D32F2F"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#B71C1C"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
-        <Style x:Key="ProfileButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseButtonStyle}">
+        <!-- Profile Button Style -->
+        <Style x:Key="ProfileButtonStyle" TargetType="{x:Type Button}" 
+               BasedOn="{StaticResource BaseButtonStyle}">
             <Setter Property="Background" Value="#2196F3"/>
-            <Setter Property="Margin" Value="0,20,130,0"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#1976D2"/>
@@ -54,9 +81,10 @@
             </Style.Triggers>
         </Style>
 
-        <Style x:Key="CustomerManagementButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseButtonStyle}">
+        <!-- Customer Management Button Style -->
+        <Style x:Key="CustomerManagementButtonStyle" TargetType="{x:Type Button}" 
+               BasedOn="{StaticResource BaseButtonStyle}">
             <Setter Property="Background" Value="#673AB7"/>
-            <Setter Property="Margin" Value="0,20,262,0"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#5E35B1"/>
@@ -67,9 +95,10 @@
             </Style.Triggers>
         </Style>
 
-        <Style x:Key="ProductManagementButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource BaseButtonStyle}">
+        <!-- Product Management Button Style -->
+        <Style x:Key="ProductManagementButtonStyle" TargetType="{x:Type Button}" 
+               BasedOn="{StaticResource BaseButtonStyle}">
             <Setter Property="Background" Value="#009688"/>
-            <Setter Property="Margin" Value="0,20,400,0"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#00796B"/>
@@ -79,36 +108,65 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-
     </Window.Resources>
 
     <Grid>
-        <TextBlock Text="Chào mừng bạn đến với Hệ thống Quản lý FU Mini Tiki!"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="36"
-                   FontWeight="Bold"
-                   Foreground="#2196F3"/>
+        <!-- Sidebar -->
+        <Border Background="#FFFFFF" 
+                Width="250" 
+                HorizontalAlignment="Left"
+                BorderBrush="#E0E0E0" 
+                BorderThickness="0,0,1,0">
+            <StackPanel Margin="20">
+                <!-- Logo or Title -->
+                <TextBlock Text="FU Mini Tiki" 
+                          FontSize="24" 
+                          FontWeight="Bold" 
+                          Foreground="#2196F3" 
+                          Margin="0,0,0,30"/>
 
-        <Button x:Name="LogoutButton" Content="Đăng xuất"
-                HorizontalAlignment="Right" VerticalAlignment="Top"
-                Style="{StaticResource LogoutButtonStyle}"
-                Click="LogoutButton_Click"/>
+                <!-- Navigation Buttons -->
+                <Button x:Name="ProfileButton" 
+                        Content="Hồ sơ của tôi"
+                        Style="{StaticResource ProfileButtonStyle}"
+                        Click="OpenProfile_Click"
+                        Width="200"/>
 
-        <Button x:Name="ProfileButton" Content="Hồ sơ của tôi"
-                HorizontalAlignment="Right" VerticalAlignment="Top"
-                Style="{StaticResource ProfileButtonStyle}"
-                Click="OpenProfile_Click"/>
+                <Button x:Name="CustomerManagementButton" 
+                        Content="Quản lý Khách hàng"
+                        Style="{StaticResource CustomerManagementButtonStyle}"
+                        Click="OpenCustomerManagement_Click"
+                        Width="200"/>
 
-        <Button x:Name="CustomerManagementButton" Content="Quản lý Khách hàng"
-                HorizontalAlignment="Right" VerticalAlignment="Top"
-                Style="{StaticResource CustomerManagementButtonStyle}"
-                Click="OpenCustomerManagement_Click" Margin="0,56,987,0"/>
+                <Button x:Name="ProductManagementButton" 
+                        Content="Quản lý Sản phẩm"
+                        Style="{StaticResource ProductManagementButtonStyle}"
+                        Click="ManageProducts_Click"
+                        Width="200"/>
 
-        <Button x:Name="ProductManagementButton" Content="Quản lý Sản phẩm"
-                HorizontalAlignment="Right" VerticalAlignment="Top"
-                Style="{StaticResource ProductManagementButtonStyle}"
-                Click="ManageProducts_Click" Margin="0,130,987,0" Height="40" Width="162"/>
+                <!-- Logout Button at Bottom -->
+                <Button x:Name="LogoutButton" 
+                        Content="Đăng xuất"
+                        Style="{StaticResource LogoutButtonStyle}"
+                        Click="LogoutButton_Click"
+                        Width="200"
+                        VerticalAlignment="Bottom"
+                        Margin="0,30,0,0"/>
+            </StackPanel>
+        </Border>
 
+        <!-- Main Content Area -->
+        <Grid Margin="250,0,0,0" Background="#F5F7FA">
+            <TextBlock Text="Chào mừng bạn đến với Hệ thống Quản lý FU Mini Tiki!"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Top"
+                       FontSize="28"
+                       FontWeight="SemiBold"
+                       FontFamily="Segoe UI"
+                       Foreground="#333333"
+                       Margin="0,50,0,0"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"/>
+        </Grid>
     </Grid>
 </Window>
