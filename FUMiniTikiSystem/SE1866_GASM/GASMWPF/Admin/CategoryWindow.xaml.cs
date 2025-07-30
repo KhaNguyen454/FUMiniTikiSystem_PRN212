@@ -3,6 +3,7 @@ using DataAccessLayer;
 using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Windows;
@@ -60,6 +61,28 @@ namespace GASMWPF.Admin
                 txtName.Text = category.Name;
                 txtDescription.Text = category.Description;
                 txtPicture.Text = category.Picture;
+            }
+        }
+
+        private void BtnBrowseImage_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    Title = "Chọn hình ảnh",
+                    Filter = "Image files (*.jpg, *.jpeg, *.png, *.gif)|*.jpg;*.jpeg;*.png;*.gif|All files (*.*)|*.*",
+                    InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures)
+                };
+
+                if (openFileDialog.ShowDialog() == true)
+                {
+                    txtPicture.Text = openFileDialog.FileName;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error selecting image: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -150,8 +173,6 @@ namespace GASMWPF.Admin
                 }
             }
         }
-
-
 
         private void ClearFields()
         {

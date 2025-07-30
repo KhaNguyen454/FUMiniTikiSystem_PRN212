@@ -75,6 +75,24 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
+        <!-- Default image for categories without pictures -->
+        <DrawingImage x:Key="DefaultCategoryImage">
+            <DrawingImage.Drawing>
+                <DrawingGroup>
+                    <GeometryDrawing Brush="#F0F0F0">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry Rect="0,0,60,60" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                    <GeometryDrawing Brush="#AAAAAA">
+                        <GeometryDrawing.Geometry>
+                            <PathGeometry Figures="M30,15 C25,15 21,19 21,24 C21,29 25,33 30,33 C35,33 39,29 39,24 C39,19 35,15 30,15 Z M45,45 L15,45 L15,42 C15,36 25,33 30,33 C35,33 45,36 45,42 L45,45 Z" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
     </Window.Resources>
 
     <Grid Margin="30">
@@ -101,7 +119,7 @@
                       HeadersVisibility="Column"
                       GridLinesVisibility="Horizontal"
                       Margin="0"
-                      RowHeight="40"
+                      RowHeight="70"
                       FontSize="14"
                       FontFamily="Segoe UI"
                       CanUserAddRows="False"
@@ -114,11 +132,35 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="ID" 
                                       Binding="{Binding CategoryId}" 
-                                      Width="100" 
+                                      Width="80" 
                                       FontWeight="Medium"/>
+                    <DataGridTemplateColumn Header="Hình ảnh" 
+                                          Width="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Border Padding="5" HorizontalAlignment="Center">
+                                    <Image Width="60" 
+                                           Height="60" 
+                                           Stretch="Uniform">
+                                        <Image.Effect>
+                                            <DropShadowEffect BlurRadius="3" 
+                                                              ShadowDepth="1" 
+                                                              Opacity="0.2"/>
+                                        </Image.Effect>
+                                        <Image.Source>
+                                            <PriorityBinding>
+                                                <Binding Path="Picture" FallbackValue="{StaticResource DefaultCategoryImage}" TargetNullValue="{StaticResource DefaultCategoryImage}"/>
+                                                <Binding Source="{StaticResource DefaultCategoryImage}"/>
+                                            </PriorityBinding>
+                                        </Image.Source>
+                                    </Image>
+                                </Border>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                     <DataGridTextColumn Header="Tên danh mục" 
                                       Binding="{Binding Name}" 
-                                      Width="250" 
+                                      Width="220" 
                                       FontWeight="Medium"/>
                     <DataGridTextColumn Header="Mô tả" 
                                       Binding="{Binding Description}" 
@@ -196,10 +238,23 @@
                               VerticalAlignment="Center" 
                               FontSize="14" 
                               FontWeight="Medium"/>
-                    <TextBox Grid.Row="2" Grid.Column="1" 
-                            x:Name="txtPicture" 
-                            Style="{StaticResource ModernTextBoxStyle}" 
-                            Margin="0,5,0,10"/>
+                    <Grid Grid.Row="2" Grid.Column="1" Margin="0,5,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="0"
+                                x:Name="txtPicture" 
+                                Style="{StaticResource ModernTextBoxStyle}"
+                                IsReadOnly="True"/>
+                        <Button Grid.Column="1"
+                                Content="Chọn ảnh" 
+                                Click="BtnBrowseImage_Click"
+                                Width="100" 
+                                Height="36" 
+                                Style="{StaticResource ModernButtonStyle}"
+                                Margin="10,0,0,0"/>
+                    </Grid>
 
                     <!-- Buttons -->
                     <StackPanel Grid.Row="3" Grid.Column="1" 

@@ -119,6 +119,7 @@
         </Border.Effect>
 
         <Grid Margin="30">
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>

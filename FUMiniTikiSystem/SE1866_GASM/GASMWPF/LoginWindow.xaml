@@ -152,9 +152,9 @@
                 </Hyperlink>
             </TextBlock>
 
-            <Button Content="X" Grid.Row="7" HorizontalAlignment="Right" VerticalAlignment="Top"
+            <Button Content="X" HorizontalAlignment="Right"
                     Background="Transparent" Foreground="#666666" BorderThickness="0"
-                    FontSize="18" FontWeight="Bold" Margin="0,-20,-20,0"
+                    FontSize="18" FontWeight="Bold" Margin="0,-16,-7,79"
                     Padding="5" Click="CloseButton_Click"
                     Style="{x:Null}">
                 <Button.Template>
