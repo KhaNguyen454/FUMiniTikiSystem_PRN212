@@ -2,26 +2,30 @@
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
-using DataAccessLayer.Entities; // Sử dụng Entities từ DataAccessLayer
-using BusinessLogicLayer.Services; // Sử dụng Services từ BusinessLogicLayer
-using System.Threading.Tasks;
+using BusinessLogicLayer.Services;
+using BusinessLogicLayer.DTOs; // Sử dụng DTOs
+using Microsoft.Extensions.DependencyInjection; // Thêm để dùng GetRequiredService
 
-namespace GASMWPF // Vẫn ở namespace gốc
+namespace GASMWPF
 {
     public partial class RegisterWindow : Window
     {
-        private readonly ICustomerService _customerService; // Khai báo Service Layer
+        private readonly ICustomerService _customerService;
+        private readonly IServiceProvider _serviceProvider; // Thêm IServiceProvider
 
-        public RegisterWindow()
+        // Constructor nhận ICustomerService và IServiceProvider thông qua Dependency Injection
+        public RegisterWindow(ICustomerService customerService, IServiceProvider serviceProvider)
         {
             InitializeComponent();
+            _customerService = customerService;
+            _serviceProvider = serviceProvider; // Gán service provider
+
             this.MouseLeftButtonDown += (sender, e) => {
                 if (e.ButtonState == MouseButtonState.Pressed)
                 {
                     this.DragMove();
                 }
             };
-            _customerService = new CustomerService(); // Khởi tạo Service Layer
         }
 
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
@@ -31,7 +35,7 @@ namespace GASMWPF // Vẫn ở namespace gốc
             string password = txtPassword.Password;
             string confirmPassword = txtConfirmPassword.Password;
 
-            // 1. Validation dữ liệu (một số được xử lý ở đây, một số ở Service Layer)
+            // ... (các kiểm tra hợp lệ khác, không thay đổi)
             if (string.IsNullOrWhiteSpace(name))
             {
                 MessageBox.Show("Vui lòng nhập Tên của bạn.", "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -71,32 +75,32 @@ namespace GASMWPF // Vẫn ở namespace gốc
 
             try
             {
-                // 2. Tạo đối tượng Customer mới
-                Customer newCustomer = new Customer
+                // Tạo CustomerDTO từ dữ liệu nhập vào
+                var newCustomerDto = new CustomerDTO
                 {
                     Name = name,
                     Email = email,
-                    Password = password, // LƯU Ý: Trong thực tế, bạn PHẢI hash mật khẩu ở đây hoặc trong Service Layer
+                    Password = password // Tạm thời để ở đây cho ví dụ đăng ký
                 };
 
-                // 3. GỌI SERVICE LAYER ĐỂ ĐĂNG KÝ
-                bool success = await _customerService.RegisterAsync(newCustomer);
+                // Gọi Service Layer để đăng ký, phương thức RegisterAsync giờ trả về bool
+                bool success = await _customerService.RegisterAsync(newCustomerDto);
 
                 if (success)
                 {
-                    MessageBox.Show("Đăng ký tài khoản thành công! Vui lòng đăng nhập.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-                    // Quay lại màn hình đăng nhập
-                    LoginWindow loginWindow = new LoginWindow(); // Vẫn tham chiếu đến LoginWindow ở gốc
+                    MessageBox.Show($"Đăng ký tài khoản thành công! Vui lòng đăng nhập.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    // Sau khi đăng ký thành công, chuyển về màn hình đăng nhập
+                    LoginWindow loginWindow = _serviceProvider.GetRequiredService<LoginWindow>(); // Lấy từ ServiceProvider
                     loginWindow.Show();
                     this.Close();
                 }
                 else
                 {
-                    // Trường hợp RegisterAsync trả về false nhưng không ném ngoại lệ
-                    MessageBox.Show("Đăng ký thất bại. Vui lòng thử lại.", "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Đăng ký tài khoản thất bại. Vui lòng thử lại.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch (ArgumentException argEx) // Bắt các lỗi validation từ Service Layer
+            catch (ArgumentException argEx) // Bắt các lỗi validation từ Service Layer (như email đã tồn tại)
             {
                 MessageBox.Show(argEx.Message, "Lỗi Đăng Ký", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
@@ -113,7 +117,7 @@ namespace GASMWPF // Vẫn ở namespace gốc
 
         private void BackToLogin_Click(object sender, RoutedEventArgs e)
         {
-            LoginWindow loginWindow = new LoginWindow();
+            LoginWindow loginWindow = _serviceProvider.GetRequiredService<LoginWindow>(); // Lấy từ ServiceProvider
             loginWindow.Show();
             this.Close();
         }

@@ -1,7 +1,7 @@
 ﻿using DataAccessLayer.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Linq; // Quan trọng: Đảm bảo có using System.Linq
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
@@ -17,7 +17,6 @@ namespace DataAccessLayer.Repositories
             _customerGenericRepository = new GenericRepository<Customer>(_context);
         }
 
-        // ĐẢM BẢO TRIỂN KHAI NÀY: Gọi GetAll() không có Async từ GenericRepository
         public IQueryable<Customer> GetAllCustomers()
         {
             return _customerGenericRepository.GetAll();
@@ -45,13 +44,17 @@ namespace DataAccessLayer.Repositories
 
         public async Task<bool> IsEmailExistsAsync(string email)
         {
-            // Các phương thức bất đồng bộ (AnyAsync, FirstOrDefaultAsync) được gọi trên IQueryable
             return await GetAllCustomers().AnyAsync(c => c.Email == email);
+        }
+
+        // Triển khai phương thức mới
+        public async Task<bool> IsEmailExistsForOtherCustomerAsync(string email, int currentCustomerId)
+        {
+            return await GetAllCustomers().AnyAsync(c => c.Email == email && c.CustomerId != currentCustomerId);
         }
 
         public async Task<Customer?> GetCustomerByEmailAndPasswordAsync(string email, string password)
         {
-            // Các phương thức bất đồng bộ (AnyAsync, FirstOrDefaultAsync) được gọi trên IQueryable
             return await GetAllCustomers().FirstOrDefaultAsync(c => c.Email == email && c.Password == password);
         }
     }

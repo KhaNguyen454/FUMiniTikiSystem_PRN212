@@ -1,29 +1,32 @@
-﻿using System;
+﻿// File: GASMWPF/LoginWindow.xaml.cs (Đã sửa)
+using System;
 using System.Windows;
 using System.Windows.Input;
-using DataAccessLayer.Entities; // Sử dụng Entities từ DataAccessLayer
-using BusinessLogicLayer.Services; // Sử dụng Services từ BusinessLogicLayer
-using System.Threading.Tasks;
+using BusinessLogicLayer.Services;
+using BusinessLogicLayer.DTOs;
+using Microsoft.Extensions.DependencyInjection;
 using GASMWPF.CustomerWindow;
+using GASMWPF.Admin; // Đảm bảo đã có namespace này cho CustomerManagementWindow
 
-using CustomerEntity = DataAccessLayer.Entities.Customer; // Tạo alias để tránh xung đột tên
-
-namespace GASMWPF // Vẫn ở namespace gốc
+namespace GASMWPF
 {
     public partial class LoginWindow : Window
     {
-        private readonly ICustomerService _customerService; // Khai báo Service Layer
+        private readonly ICustomerService _customerService;
+        private readonly IServiceProvider _serviceProvider;
 
-        public LoginWindow()
+        public LoginWindow(ICustomerService customerService, IServiceProvider serviceProvider)
         {
             InitializeComponent();
+            _customerService = customerService;
+            _serviceProvider = serviceProvider;
+
             this.MouseLeftButtonDown += (sender, e) => {
                 if (e.ButtonState == MouseButtonState.Pressed)
                 {
                     this.DragMove();
                 }
             };
-            _customerService = new CustomerService(); // Khởi tạo Service Layer
         }
 
         private async void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -46,19 +49,29 @@ namespace GASMWPF // Vẫn ở namespace gốc
 
             try
             {
-                // Gọi Service Layer để đăng nhập
-                // Sử dụng alias CustomerEntity để rõ ràng là kiểu dữ liệu
-                CustomerEntity? authenticatedCustomer = await _customerService.LoginAsync(email, password);
+                CustomerDTO? authenticatedCustomer = await _customerService.LoginAsync(email, password);
 
-                // Kiểm tra null an toàn.
                 if (authenticatedCustomer != null)
                 {
                     MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                    // Truyền thông tin khách hàng đã đăng nhập sang màn hình chính
-                    // authenticatedCustomer đã được đảm bảo không null trong khối if này.
-                    MainApplicationWindow mainAppWindow = new MainApplicationWindow(authenticatedCustomer);
-                    mainAppWindow.Show();
+                    if (authenticatedCustomer.IsAdmin)
+                    {
+                        // Đối với admin, giả định MainApplicationWindow đã được cấu hình đúng
+                        MainApplicationWindow mainAppWindow = _serviceProvider.GetRequiredService<MainApplicationWindow>();
+                        mainAppWindow.SetLoggedInCustomer(authenticatedCustomer); // Giả sử MainApplicationWindow có phương thức này
+                        mainAppWindow.Show();
+                    }
+                    else
+                    {
+                        // Lấy CustomerDashboardWindow từ DI container
+                        CustomerDashboardWindow customerDashboardWindow = _serviceProvider.GetRequiredService<CustomerDashboardWindow>();
+
+                        // Gọi phương thức SetLoggedInCustomer để truyền dữ liệu
+                        customerDashboardWindow.SetLoggedInCustomer(authenticatedCustomer); // <--- ĐÃ SỬA DÒNG NÀY
+
+                        customerDashboardWindow.Show();
+                    }
                     this.Close();
                 }
                 else
@@ -74,7 +87,7 @@ namespace GASMWPF // Vẫn ở namespace gốc
 
         private void RegisterLink_Click(object sender, RoutedEventArgs e)
         {
-            RegisterWindow registerWindow = new RegisterWindow(); // Vẫn tham chiếu đến RegisterWindow ở gốc
+            RegisterWindow registerWindow = _serviceProvider.GetRequiredService<RegisterWindow>();
             registerWindow.Show();
             this.Close();
         }

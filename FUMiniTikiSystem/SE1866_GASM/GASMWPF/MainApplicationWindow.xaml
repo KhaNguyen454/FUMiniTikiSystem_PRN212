@@ -36,12 +36,9 @@
             </Style.Triggers>
         </Style>
 
-       
         <Style x:Key="ProfileButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource LogoutButtonStyle}">
             <Setter Property="Background" Value="#2196F3"/>
-          
             <Setter Property="Margin" Value="0,20,130,0"/>
-     
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#1976D2"/>
@@ -52,10 +49,9 @@
             </Style.Triggers>
         </Style>
 
-
         <Style x:Key="AdminButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource LogoutButtonStyle}">
             <Setter Property="Background" Value="#673AB7"/>
-            <Setter Property="Margin" Value="0,20,240,0"/>
+            <Setter Property="Margin" Value="0,20,262,0"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#5E35B1"/>
@@ -75,20 +71,20 @@
                    FontWeight="Bold"
                    Foreground="#2196F3"/>
 
-        <Button Content="Đăng xuất"
+        <Button x:Name="LogoutButton" Content="Đăng xuất"
                 HorizontalAlignment="Right" VerticalAlignment="Top"
                 Margin="20"
                 Style="{StaticResource LogoutButtonStyle}"
                 Click="LogoutButton_Click"/>
 
-        <Button Content="Hồ sơ của tôi"
+        <Button x:Name="ProfileButton" Content="Hồ sơ của tôi"
                 HorizontalAlignment="Right" VerticalAlignment="Top"
                 Style="{StaticResource ProfileButtonStyle}"
                 Click="OpenProfile_Click"/>
-        
-        <Button Content="Quản lý Khách hàng"
+
+        <Button x:Name="AdminButton" Content="Quản lý Khách hàng"
                 HorizontalAlignment="Right" VerticalAlignment="Top"
                 Style="{StaticResource AdminButtonStyle}"
-                Click="OpenCustomerManagement_Click" Margin="0,20,262,0"/>
+                Click="OpenCustomerManagement_Click"/>
     </Grid>
 </Window>

@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using BusinessLogicLayer.Services;
-using DataAccessLayer.Entities;
+using BusinessLogicLayer.DTOs; // Thêm để sử dụng CustomerDTO
 
 namespace GASMWPF.Admin
 {
@@ -15,10 +15,12 @@ namespace GASMWPF.Admin
     {
         private readonly ICustomerService _customerService;
 
-        public CustomerManagementWindow()
+        // Constructor nhận ICustomerService thông qua Dependency Injection
+        public CustomerManagementWindow(ICustomerService customerService)
         {
             InitializeComponent();
-            _customerService = new CustomerService();
+            _customerService = customerService; // Gán service được inject
+
             this.MouseLeftButtonDown += (sender, e) => {
                 if (e.ButtonState == MouseButtonState.Pressed)
                 {
@@ -37,8 +39,9 @@ namespace GASMWPF.Admin
         {
             try
             {
-                IEnumerable<Customer> customers = await _customerService.GetAllCustomersAsync();
-                dgCustomers.ItemsSource = customers.ToList();
+                // Gọi Service Layer để lấy CustomerDTOs
+                IEnumerable<CustomerDTO> customers = await _customerService.GetAllCustomersAsync();
+                dgCustomers.ItemsSource = customers.ToList(); // DataGrid bind với CustomerDTOs
             }
             catch (Exception ex)
             {
@@ -56,14 +59,15 @@ namespace GASMWPF.Admin
             txtCustomerId.Text = string.Empty;
             txtName.Text = string.Empty;
             txtEmail.Text = string.Empty;
-            txtPassword.Password = string.Empty; // Vẫn xóa nội dung hiển thị
-            txtSearchEmail.Text = string.Empty; // Xóa trường tìm kiếm
+            txtPassword.Password = string.Empty;
+            txtSearchEmail.Text = string.Empty;
             dgCustomers.SelectedItem = null;
         }
 
         private void DgCustomers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (dgCustomers.SelectedItem is Customer selectedCustomer)
+            // Kiểm tra kiểu là CustomerDTO
+            if (dgCustomers.SelectedItem is CustomerDTO selectedCustomer)
             {
                 txtCustomerId.Text = selectedCustomer.CustomerId.ToString();
                 txtName.Text = selectedCustomer.Name;
@@ -86,16 +90,20 @@ namespace GASMWPF.Admin
         {
             if (!ValidateInput(isNew: true)) return;
 
-            Customer newCustomer = new Customer
+            // Tạo CustomerDTO từ input UI
+            CustomerDTO newCustomerDto = new CustomerDTO
             {
+                // CustomerId sẽ được tạo bởi DB, không cần gán ở đây khi thêm mới
                 Name = txtName.Text,
                 Email = txtEmail.Text,
-                Password = txtPassword.Password // Mật khẩu chỉ được thiết lập khi thêm mới
+                Password = txtPassword.Password,
+                IsAdmin = false // Mặc định khi thêm mới là người dùng thường
             };
 
             try
             {
-                bool success = await _customerService.RegisterAsync(newCustomer);
+                // Gọi Service Layer với CustomerDTO, phương thức RegisterAsync trả về bool
+                bool success = await _customerService.RegisterAsync(newCustomerDto);
 
                 if (success)
                 {
@@ -134,32 +142,33 @@ namespace GASMWPF.Admin
                 return;
             }
 
-            
+            // Không cho phép thay đổi mật khẩu từ đây (như logic hiện có)
             if (!string.IsNullOrWhiteSpace(txtPassword.Password))
             {
-                MessageBox.Show("Không thể thay đổi mật khẩu.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-                txtPassword.Password = string.Empty; 
-                return; 
+                MessageBox.Show("Không thể thay đổi mật khẩu từ màn hình quản lý. Vui lòng sử dụng chức năng đổi mật khẩu riêng.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                txtPassword.Password = string.Empty; // Xóa mật khẩu đã nhập
+                return;
             }
 
             try
             {
-                // Tải khách hàng hiện có từ database để Entity Framework theo dõi đúng đối tượng
-                Customer? existingCustomer = await _customerService.GetCustomerByIdAsync(customerId);
+                // Lấy CustomerDTO hiện có từ Service để đảm bảo cập nhật đúng
+                CustomerDTO? existingCustomerDto = await _customerService.GetCustomerByIdAsync(customerId);
 
-                if (existingCustomer == null)
+                if (existingCustomerDto == null)
                 {
                     MessageBox.Show("Không tìm thấy khách hàng để cập nhật.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                     await LoadCustomers(); // Tải lại danh sách để đồng bộ
                     return;
                 }
 
-                // Cập nhật các thuộc tính của đối tượng đã được tải
-                existingCustomer.Name = txtName.Text;
-                existingCustomer.Email = txtEmail.Text;
-                // Mật khẩu không được cập nhật từ đây, nó giữ nguyên giá trị đã tải từ DB
+                // Cập nhật các thuộc tính của DTO từ UI
+                existingCustomerDto.Name = txtName.Text;
+                existingCustomerDto.Email = txtEmail.Text;
+                // Mật khẩu và IsAdmin không được sửa đổi từ UI này, giữ nguyên giá trị đã tải
 
-                bool success = await _customerService.UpdateCustomerProfileAsync(existingCustomer); // Truyền đối tượng đã tải và sửa đổi
+                // Gọi Service Layer với CustomerDTO đã cập nhật, sử dụng UpdateCustomerProfileAsync
+                bool success = await _customerService.UpdateCustomerProfileAsync(existingCustomerDto);
 
                 if (success)
                 {
@@ -200,6 +209,7 @@ namespace GASMWPF.Admin
 
                 try
                 {
+                    // Gọi Service Layer để xóa theo ID, sử dụng DeleteCustomerByIdAsync
                     bool success = await _customerService.DeleteCustomerByIdAsync(customerId);
 
                     if (success)
@@ -220,7 +230,6 @@ namespace GASMWPF.Admin
             }
         }
 
-        // ĐÃ SỬA: Phương thức tìm kiếm khách hàng theo Email (tìm kiếm một phần)
         private async void SearchByEmail_Click(object sender, RoutedEventArgs e)
         {
             string searchTerm = txtSearchEmail.Text.Trim();
@@ -232,35 +241,27 @@ namespace GASMWPF.Admin
                 return;
             }
 
-            // Không cần validate email đầy đủ, chỉ là một chuỗi tìm kiếm
-            // if (!IsValidEmail(searchTerm))
-            // {
-            //     MessageBox.Show("Email tìm kiếm không hợp lệ.", "Tìm kiếm khách hàng", MessageBoxButton.OK, MessageBoxImage.Warning);
-            //     return;
-            // }
-
             try
             {
-                IEnumerable<Customer> allCustomers = await _customerService.GetAllCustomersAsync();
-                // Lọc danh sách khách hàng dựa trên chuỗi tìm kiếm (không phân biệt chữ hoa/thường)
-                List<Customer> filteredCustomers = allCustomers.Where(c => c.Email.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
+                // Gọi Service Layer để lấy tất cả CustomerDTOs và lọc ở đây
+                IEnumerable<CustomerDTO> allCustomers = await _customerService.GetAllCustomersAsync();
+                List<CustomerDTO> filteredCustomers = allCustomers.Where(c => c.Email.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
 
                 if (filteredCustomers.Any())
                 {
-                    dgCustomers.ItemsSource = filteredCustomers; // Hiển thị các khách hàng tìm thấy
-                    ClearInputFieldsExceptSearch(); // Xóa các trường nhập liệu khác
-                    // Nếu chỉ có một kết quả, điền vào các trường nhập liệu
+                    dgCustomers.ItemsSource = filteredCustomers;
+                    ClearInputFieldsExceptSearch();
                     if (filteredCustomers.Count == 1)
                     {
                         txtCustomerId.Text = filteredCustomers[0].CustomerId.ToString();
                         txtName.Text = filteredCustomers[0].Name;
                         txtEmail.Text = filteredCustomers[0].Email;
-                        // Mật khẩu vẫn không hiển thị
+                        txtPassword.Password = string.Empty;
                     }
                 }
                 else
                 {
-                    dgCustomers.ItemsSource = null; // Xóa DataGrid
+                    dgCustomers.ItemsSource = null;
                     MessageBox.Show("Không tìm thấy khách hàng nào khớp với Email này.", "Tìm kiếm khách hàng", MessageBoxButton.OK, MessageBoxImage.Information);
                     ClearInputFields();
                 }
@@ -271,7 +272,6 @@ namespace GASMWPF.Admin
             }
         }
 
-        // Thêm phương thức ClearInputFieldsExceptSearch để sử dụng khi tìm kiếm
         private void ClearInputFieldsExceptSearch()
         {
             txtCustomerId.Text = string.Empty;
@@ -280,7 +280,6 @@ namespace GASMWPF.Admin
             txtPassword.Password = string.Empty;
             dgCustomers.SelectedItem = null;
         }
-
 
         private bool ValidateInput(bool isNew)
         {
@@ -302,7 +301,6 @@ namespace GASMWPF.Admin
                 txtEmail.Focus();
                 return false;
             }
-            // Chỉ kiểm tra mật khẩu khi thêm mới
             if (isNew && string.IsNullOrWhiteSpace(txtPassword.Password))
             {
                 MessageBox.Show("Mật khẩu không được để trống khi thêm mới.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
