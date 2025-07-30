@@ -120,5 +120,11 @@ namespace GASMWPF.Admin
                 MessageBox.Show("Bạn không có quyền truy cập tính năng này.", "Truy cập bị từ chối", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
+        private void ManageCategories_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryWindow categoryWindow = new CategoryWindow();
+            categoryWindow.ShowDialog();
+        }
     }
 }

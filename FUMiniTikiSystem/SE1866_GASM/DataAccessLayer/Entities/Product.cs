@@ -26,5 +26,7 @@ namespace DataAccessLayer.Entities
         // Navigation properties
         public virtual Category Category { get; set; }
         public virtual Order? Order { get; set; } // Nullable navigation property
+
+        public virtual ICollection<Cart> Carts { get; set; }
     }
 }

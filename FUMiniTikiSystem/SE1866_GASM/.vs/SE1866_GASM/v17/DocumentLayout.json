@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\admin\\customermanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\admin\\customermanagementwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\admin\\productwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\admin\\productwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\customerwindow\\customerdashboardwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\customerwindow\\customerdashboardwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\admin\\mainapplicationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\admin\\mainapplicationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\customerwindow\\customerprofilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\customerwindow\\customerprofilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\admin\\mainapplicationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\admin\\mainapplicationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\businesslogiclayer\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15BB4858-7B30-4290-8012-DCD972D9D0FF}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\gasmwpf\\admin\\customermanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DABF8857-1EAC-4466-A5F0-7E2804960ABE}|GASMWPF\\GASMWPF.csproj|solutionrelative:gasmwpf\\admin\\customermanagementwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|d:\\git_wp\\fuminitikisystem_prn212\\fuminitikisystem\\se1866_gasm\\dataaccesslayer\\fuminitikisystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353CA8D-1D64-46F2-9D34-5DCA61009E6B}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fuminitikisystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +50,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 957,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
-              "RelativeDocumentMoniker": "GASMWPF\\appsettings.json",
-              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
-              "RelativeToolTip": "GASMWPF\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-30T18:43:12.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\CustomerService.cs",
-              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Services\\CustomerService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\CustomerService.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAwwA4AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:40:35.762Z",
+              "DocumentIndex": 7,
+              "Title": "DataAccessLayer.csproj",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-30T20:18:27.903Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\RegisterWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\RegisterWindow.xaml.cs",
-              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\RegisterWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\RegisterWindow.xaml.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAMwFYAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:40:26.566Z",
+              "Title": "ProductWindow.xaml",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\ProductWindow.xaml",
+              "RelativeDocumentMoniker": "GASMWPF\\Admin\\ProductWindow.xaml",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\ProductWindow.xaml",
+              "RelativeToolTip": "GASMWPF\\Admin\\ProductWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T22:53:32.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAMwDMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:40:23.78Z",
+              "DocumentIndex": 0,
+              "Title": "CustomerManagementWindow.xaml",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\CustomerManagementWindow.xaml",
+              "RelativeDocumentMoniker": "GASMWPF\\Admin\\CustomerManagementWindow.xaml",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\CustomerManagementWindow.xaml",
+              "RelativeToolTip": "GASMWPF\\Admin\\CustomerManagementWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T22:53:26.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerDashboardWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\CustomerWindow\\CustomerDashboardWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\CustomerWindow\\CustomerDashboardWindow.xaml.cs",
-              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\CustomerWindow\\CustomerDashboardWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\CustomerWindow\\CustomerDashboardWindow.xaml.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAMwEMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:40:20.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomerProfileWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\CustomerWindow\\CustomerProfileWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\CustomerWindow\\CustomerProfileWindow.xaml.cs",
-              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\CustomerWindow\\CustomerProfileWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\CustomerWindow\\CustomerProfileWindow.xaml.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAMwGUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:40:16.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerManagementWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\CustomerManagementWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GASMWPF\\Admin\\CustomerManagementWindow.xaml.cs",
-              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\CustomerManagementWindow.xaml.cs",
-              "RelativeToolTip": "GASMWPF\\Admin\\CustomerManagementWindow.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAApwCoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:34:55.735Z",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
+              "RelativeDocumentMoniker": "GASMWPF\\appsettings.json",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\appsettings.json",
+              "RelativeToolTip": "GASMWPF\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-30T20:22:04.122Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ICustomerService.cs",
-              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Services\\ICustomerService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\ICustomerService.cs",
-              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\BusinessLogicLayer\\Services\\ICustomerService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\ICustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "MainApplicationWindow.xaml",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\MainApplicationWindow.xaml",
+              "RelativeDocumentMoniker": "GASMWPF\\Admin\\MainApplicationWindow.xaml",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\MainApplicationWindow.xaml",
+              "RelativeToolTip": "GASMWPF\\Admin\\MainApplicationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T22:13:32.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainApplicationWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\MainApplicationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GASMWPF\\Admin\\MainApplicationWindow.xaml.cs",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\GASMWPF\\Admin\\MainApplicationWindow.xaml.cs",
+              "RelativeToolTip": "GASMWPF\\Admin\\MainApplicationWindow.xaml.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAIEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:34:00.962Z",
+              "WhenOpened": "2025-07-30T22:13:29.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\IRepository.cs",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:28:33.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Cart.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Cart.cs",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Cart.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:24:05.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Order.cs",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\Entities\\Order.cs",
+              "RelativeToolTip": "DataAccessLayer\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T20:23:54.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FUMiniTikiSystemDBContext.cs",
+              "DocumentMoniker": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
+              "ToolTip": "D:\\Git_WP\\FUMiniTikiSystem_PRN212\\FUMiniTikiSystem\\SE1866_GASM\\DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\FUMiniTikiSystemDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T19:53:32.332Z",
               "EditorCaption": ""
             }
           ]
