@@ -54,7 +54,11 @@ namespace GASMWPF.CustomerWindow
                 MessageBox.Show("Không có thông tin khách hàng để cập nhật.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-
+            if (_currentCustomer.IsAdmin)
+            {
+                MessageBox.Show("Tài khoản Admin gốc không thể cập nhật thông tin.", "Lỗi Cập Nhật", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             // --- Bắt đầu Validation ---
             string newName = txtName.Text.Trim();
             string newEmail = txtEmail.Text.Trim();

@@ -35,7 +35,6 @@ namespace DataAccessLayer.Repositories
 
         public void Update(Product product)
         {
-            _context.Products.Update(product);
             _context.SaveChanges();
         }
 

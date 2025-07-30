@@ -1,18 +1,28 @@
-﻿using DataAccessLayer.Entities;
-using System;
+﻿
+using BusinessLogicLayer.DTOs; 
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading.Tasks; 
 
 namespace BusinessLogicLayer.Services
 {
     public interface IProductService
     {
-        IEnumerable<Product> GetAll();
-        Product? GetById(int id);
-        void Add(Product product);
-        void Update(Product product);
-        void Delete(int id);
+        // Trả về IEnumerable<ProductDTO>
+        IEnumerable<ProductDTO> GetAllProductsDTO();
+
+        // Trả về ProductDTO?
+        ProductDTO? GetProductDTOById(int id);
+
+        // Nhận ProductDTO để thêm mới
+        void AddProduct(ProductDTO productDto);
+
+        // Nhận ProductDTO để cập nhật
+        void UpdateProduct(ProductDTO productDto);
+
+        // Vẫn xóa theo ID
+        void DeleteProduct(int id);
+
+        // Thêm phương thức tìm kiếm (đề xuất)
+        IEnumerable<ProductDTO> SearchProducts(string searchTerm);
     }
 }

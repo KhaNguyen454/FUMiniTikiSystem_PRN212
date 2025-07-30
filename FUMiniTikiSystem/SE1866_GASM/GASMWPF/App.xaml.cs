@@ -41,7 +41,14 @@ namespace GASMWPF
                     services.AddTransient<CustomerProfileWindow>();
                     services.AddTransient<RegisterWindow>();
                     services.AddTransient<MainApplicationWindow>();
-                    services.AddTransient<CustomerManagementWindow>(); 
+                    services.AddTransient<CustomerManagementWindow>();
+
+                    services.AddTransient<IProductRepository, ProductRepository>();
+                    services.AddTransient<IProductService, ProductService>();
+                    services.AddTransient<ProductWindow>(); 
+                    services.AddTransient<ICategoryRepository, CategoryRepository>(); 
+                    services.AddTransient<ICategoryService, CategoryService>(); 
+                                                                              
                 })
                 .Build();
         }

@@ -12,7 +12,7 @@ namespace BusinessLogicLayer.DTOs
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public bool IsAdmin { get; set; } // Thêm thuộc tính này để phân biệt Admin/Customer
+        public bool IsAdmin { get; set; }
     }
 
    

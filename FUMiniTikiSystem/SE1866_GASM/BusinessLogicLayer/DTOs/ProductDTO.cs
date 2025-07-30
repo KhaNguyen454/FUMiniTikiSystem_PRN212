@@ -14,6 +14,6 @@ namespace BusinessLogicLayer.DTOs
         public string? Description { get; set; }
         public int CategoryId { get; set; }
         public int? OrderId { get; set; }
-        public string? CategoryName { get; set; } // Ví dụ để hiển thị
+        public string? CategoryName { get; set; } 
     }
 }
