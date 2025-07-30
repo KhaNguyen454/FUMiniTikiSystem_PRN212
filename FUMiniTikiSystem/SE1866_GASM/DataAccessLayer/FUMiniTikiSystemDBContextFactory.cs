@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System.IO;
-using System; // Thêm dòng này để sử dụng Console
+using System;
 
 namespace DataAccessLayer
 {
@@ -10,28 +10,25 @@ namespace DataAccessLayer
     {
         public FUMiniTikiSystemDBContext CreateDbContext(string[] args)
         {
-            // Lấy đường dẫn thư mục hiện tại khi lệnh migration chạy
             string basePath = Directory.GetCurrentDirectory();
-            Console.WriteLine($"DEBUG: Current base path for appsettings.json: {basePath}"); // DEBUG
+            Console.WriteLine($"DEBUG: Current base path for appsettings.json: {basePath}");
 
             IConfiguration config = new ConfigurationBuilder()
                 .SetBasePath(basePath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .Build();
 
-            // Lấy chuỗi kết nối từ appsettings.json
-            var connectionString = config.GetConnectionString("DefaultConnection");
+            // Lấy chuỗi kết nối TỪ TÊN ĐÚNG TRONG appsettings.json: "FUMiniTikiDB"
+            var connectionString = config.GetConnectionString("FUMiniTikiDB");
 
-            // Kiểm tra nếu chuỗi kết nối là null hoặc rỗng, sau đó sử dụng chuỗi dự phòng
             if (string.IsNullOrEmpty(connectionString))
             {
-                // Đây là chuỗi dự phòng, nếu appsettings.json không tìm thấy hoặc key không đúng
                 connectionString = "Server=(local);Database=FUMiniTikiSystem;Trusted_Connection=True;TrustServerCertificate=True;";
-                Console.WriteLine($"DEBUG: Connection string from appsettings.json was not found or was empty. Using fallback connection string: {connectionString}"); // DEBUG
+                Console.WriteLine($"DEBUG: Connection string from appsettings.json was not found or was empty. Using fallback connection string: {connectionString}");
             }
             else
             {
-                Console.WriteLine($"DEBUG: Using connection string from appsettings.json: {connectionString}"); // DEBUG
+                Console.WriteLine($"DEBUG: Using connection string from appsettings.json: {connectionString}");
             }
 
             var optionsBuilder = new DbContextOptionsBuilder<FUMiniTikiSystemDBContext>();

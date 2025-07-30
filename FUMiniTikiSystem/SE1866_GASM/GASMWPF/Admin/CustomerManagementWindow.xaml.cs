@@ -134,6 +134,14 @@ namespace GASMWPF.Admin
                 return;
             }
 
+            
+            if (!string.IsNullOrWhiteSpace(txtPassword.Password))
+            {
+                MessageBox.Show("Không thể thay đổi mật khẩu.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                txtPassword.Password = string.Empty; 
+                return; 
+            }
+
             try
             {
                 // Tải khách hàng hiện có từ database để Entity Framework theo dõi đúng đối tượng
@@ -149,8 +157,7 @@ namespace GASMWPF.Admin
                 // Cập nhật các thuộc tính của đối tượng đã được tải
                 existingCustomer.Name = txtName.Text;
                 existingCustomer.Email = txtEmail.Text;
-                // ĐÃ SỬA: KHÔNG CẬP NHẬT MẬT KHẨU TẠI ĐÂY. Mật khẩu sẽ không bị thay đổi.
-                // existingCustomer.Password = txtPassword.Password; // Dòng này đã được loại bỏ
+                // Mật khẩu không được cập nhật từ đây, nó giữ nguyên giá trị đã tải từ DB
 
                 bool success = await _customerService.UpdateCustomerProfileAsync(existingCustomer); // Truyền đối tượng đã tải và sửa đổi
 
@@ -213,41 +220,48 @@ namespace GASMWPF.Admin
             }
         }
 
-        // ĐÃ THÊM: Phương thức tìm kiếm khách hàng theo Email
+        // ĐÃ SỬA: Phương thức tìm kiếm khách hàng theo Email (tìm kiếm một phần)
         private async void SearchByEmail_Click(object sender, RoutedEventArgs e)
         {
-            string email = txtSearchEmail.Text.Trim();
+            string searchTerm = txtSearchEmail.Text.Trim();
 
-            if (string.IsNullOrWhiteSpace(email))
+            if (string.IsNullOrWhiteSpace(searchTerm))
             {
-                MessageBox.Show("Vui lòng nhập Email để tìm kiếm.", "Tìm kiếm khách hàng", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Vui lòng nhập Email hoặc một phần Email để tìm kiếm.", "Tìm kiếm khách hàng", MessageBoxButton.OK, MessageBoxImage.Information);
                 await LoadCustomers(); // Tải lại tất cả nếu trường tìm kiếm trống
                 return;
             }
 
-            if (!IsValidEmail(email))
-            {
-                MessageBox.Show("Email tìm kiếm không hợp lệ.", "Tìm kiếm khách hàng", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
+            // Không cần validate email đầy đủ, chỉ là một chuỗi tìm kiếm
+            // if (!IsValidEmail(searchTerm))
+            // {
+            //     MessageBox.Show("Email tìm kiếm không hợp lệ.", "Tìm kiếm khách hàng", MessageBoxButton.OK, MessageBoxImage.Warning);
+            //     return;
+            // }
 
             try
             {
-                Customer? foundCustomer = await _customerService.GetCustomerByEmailAsync(email);
+                IEnumerable<Customer> allCustomers = await _customerService.GetAllCustomersAsync();
+                // Lọc danh sách khách hàng dựa trên chuỗi tìm kiếm (không phân biệt chữ hoa/thường)
+                List<Customer> filteredCustomers = allCustomers.Where(c => c.Email.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
 
-                if (foundCustomer != null)
+                if (filteredCustomers.Any())
                 {
-                    dgCustomers.ItemsSource = new List<Customer> { foundCustomer }; // Hiển thị chỉ khách hàng tìm thấy
+                    dgCustomers.ItemsSource = filteredCustomers; // Hiển thị các khách hàng tìm thấy
                     ClearInputFieldsExceptSearch(); // Xóa các trường nhập liệu khác
-                    txtCustomerId.Text = foundCustomer.CustomerId.ToString();
-                    txtName.Text = foundCustomer.Name;
-                    txtEmail.Text = foundCustomer.Email;
-                    // Mật khẩu vẫn không hiển thị
+                    // Nếu chỉ có một kết quả, điền vào các trường nhập liệu
+                    if (filteredCustomers.Count == 1)
+                    {
+                        txtCustomerId.Text = filteredCustomers[0].CustomerId.ToString();
+                        txtName.Text = filteredCustomers[0].Name;
+                        txtEmail.Text = filteredCustomers[0].Email;
+                        // Mật khẩu vẫn không hiển thị
+                    }
                 }
                 else
                 {
                     dgCustomers.ItemsSource = null; // Xóa DataGrid
-                    MessageBox.Show("Không tìm thấy khách hàng với Email này.", "Tìm kiếm khách hàng", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Không tìm thấy khách hàng nào khớp với Email này.", "Tìm kiếm khách hàng", MessageBoxButton.OK, MessageBoxImage.Information);
                     ClearInputFields();
                 }
             }

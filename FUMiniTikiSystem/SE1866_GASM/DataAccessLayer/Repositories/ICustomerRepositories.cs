@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories // Đã đổi namespace
 {
-    public interface ICustomerRepository // Đã đổi tên interface
+    public interface ICustomerRepository
     {
         IQueryable<Customer> GetAllCustomers();
         Task<Customer?> GetCustomerByIdAsync(int id);
